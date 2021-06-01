@@ -1,0 +1,360 @@
+/*************** Dashboard visuals ****************/
+
+.dashboard-container {
+  background: #26272d;
+}
+
+/** Cards Responsive Style Using Flexbox **/
+.cards-row-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card-flex-alignments {
+  justify-content: center;
+  align-self: center;
+  text-align: start;
+}
+
+.card-flex-backgrounds {
+  background: #2e3036 0% 0% no-repeat padding-box;
+  height: 8.1rem;
+}
+
+.cards-column-flex {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%; /** Sets the initial main size of a flex item **/
+  margin: 0.5em;
+}
+
+.cards-column-flex-single {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%; /** Sets the initial main size of a flex item **/
+  margin: 0.5em;
+  flex: 1;
+}
+
+.cards-column-flex-double {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%; /** Sets the initial main size of a flex item **/
+  margin: 0.5em;
+  flex: 2;
+}
+
+.cards-column-flex-triple {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%; /** Sets the initial main size of a flex item **/
+  margin: 0.5em;
+  flex: 3;
+}
+
+.expectative-color {
+  color: #ffba2b !important;
+}
+
+.realized-color {
+  color: #ffba2b !important;
+}
+
+.late-color {
+  color: #ff4949 !important;
+}
+
+.turn-timer {
+  color: #ffba2b !important ;
+}
+
+@media screen and (min-width: 800px) {
+  .cards-column-flex {
+    flex: 1;
+  }
+}
+
+.turn-title-metric {
+  text-align: left;
+  font-size: 5rem;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  font-family: FrutigerLTRoman, Arial, Helvetica, sans-serif;
+}
+
+.turn-number-metric {
+  font-family: FrutigerLTBlack, Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-size: 6.25rem;
+  letter-spacing: 0px;
+  color: #84e96a;
+  opacity: 1;
+}
+
+.turn-description-planned {
+  text-align: right;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-family: FrutigerLtRoman, Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  opacity: 0.6;
+}
+
+.turn-number-timer {
+  font-family: FrutigerLTBlack, Arial, Helvetica, sans-serif;
+  text-align: right;
+  font-size: 5.9375rem;
+  letter-spacing: 0px;
+  color: #25a5ee;
+  opacity: 1;
+}
+
+.line-info-header {
+  text-align: left;
+  color: #25a5ee;
+  font-size: 3.5rem;
+  font-family: FrutigerLTBlack, Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+/** Mobile Devices **/
+@media screen and (max-width: 600px) {
+  .cards-row-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100% !important;
+  }
+
+  .turn-title-metric {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .line-info-header {
+    font-size: 1rem;
+  }
+
+  .line-info-aligments {
+    text-align: center;
+  }
+
+  .turn-number-timer {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .turn-number-metric {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .turn-description-planned {
+    text-align: center;
+  }
+
+  .cards-column-flex-triple {
+    flex: 2;
+  }
+}
+
+/** 
+  WEB DEVICES CSS 
+**/
+@media screen and (min-width: 601px) and (max-width: 799px) {
+  .cards-row-flex {
+    flex-direction: row;
+  }
+
+  .line-info-header {
+    font-size: 2rem;
+  }
+
+  .cards-column-flex-triple {
+    flex: 2;
+  }
+
+  .turn-number-timer {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  /* When tablet  card-flex-backgrounds needs 100% height */
+  .card-flex-backgrounds {
+    height: 100%;
+  }
+
+  .turn-title-metric {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .line-info-aligments {
+    text-align: center;
+  }
+
+  .turn-number-metric {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .turn-description-planned {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .column-flex-direction {
+    flex-direction: row;
+  }
+  .turn-number-timer {
+    font-size: 1.5rem;
+  }
+  .turn-number-metric {
+    font-size: 1.5rem;
+  }
+  .line-info-aligments {
+    font-size: 1.5rem;
+  }
+  .turn-title-metric {
+    font-size: 1.5rem;
+  }
+  .line-info-header {
+    font-size: 1.5rem;
+  }
+  .turn-title-metric {
+    text-align: center;
+  }
+  .line-info-aligments {
+    text-align: center;
+  }
+  .turn-number-timer {
+    text-align: center;
+  }
+  .turn-number-metric {
+    text-align: center;
+  }
+  .turn-description-planned {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1023px) {
+  /* When tablet  card-flex-backgrounds needs 100% height */
+  .card-flex-backgrounds {
+    height: 100%;
+  }
+  .turn-title-metric {
+    text-align: center;
+  }
+  .line-info-aligments {
+    text-align: center;
+  }
+  .turn-number-timer {
+    text-align: center;
+  }
+  .turn-number-metric {
+    text-align: center;
+  }
+  .turn-description-planned {
+    text-align: center;
+  }
+  .column-flex-direction {
+    flex-direction: row;
+  }
+  .turn-number-timer {
+    font-size: 2.5rem;
+  }
+  .turn-number-metric {
+    font-size: 2.5rem;
+  }
+  .line-info-aligments {
+    font-size: 2.5rem;
+  }
+  .turn-title-metric {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .card-flex-backgrounds {
+    height: 8rem;
+  }
+  .turn-title-metric {
+    text-align: center;
+  }
+  .line-info-aligments {
+    text-align: center;
+  }
+  .turn-number-timer {
+    text-align: center;
+  }
+  .turn-number-metric {
+    text-align: center;
+  }
+  .turn-description-planned {
+    text-align: center;
+  }
+  .column-flex-direction {
+    flex-direction: row;
+  }
+  .turn-number-timer {
+    font-size: 2.5rem;
+  }
+  .turn-number-metric {
+    font-size: 2.5rem;
+  }
+  .line-info-aligments {
+    font-size: 2.5rem;
+  }
+  .turn-title-metric {
+    font-size: 2.5rem;
+  }
+  .line-info-header {
+    font-size: 1.8rem;
+  }
+}
+/* Notebooks displays */
+@media screen and (min-width: 1366px) and (max-width: 1500px) {
+  .line-info-header {
+    font-size: 2rem;
+  }
+  .turn-number-timer {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .turn-title-metric {
+    font-size: 2rem;
+  }
+  .turn-number-metric {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .card-flex-backgrounds {
+    height: 5rem;
+  }
+}
+
+/* Notebooks displays */
+@media screen and (min-width: 1501px) and (max-width: 1800px) {
+  .line-info-header {
+    font-size: 2.5rem;
+  }
+  .turn-number-timer {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .turn-title-metric {
+    font-size: 2.5rem;
+  }
+  .turn-number-metric {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .card-flex-backgrounds {
+    height: 7rem;
+  }
+}
